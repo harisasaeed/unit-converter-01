@@ -3,6 +3,7 @@ import pandas as pd
 import os
 from io import BytesIO
 
+
 # Function to convert units
 def convert_length(value, from_unit, to_unit):
     units = {
@@ -39,7 +40,3 @@ if result is not None:
     st.write(f"{value} {from_unit} is equal to {result:.6f} {to_unit}.")
 else:
     st.write("Invalid units selected.")
-
-# Optionally, add a reset feature
-if st.button("Reset"):
-    st.experimental_rerun()
